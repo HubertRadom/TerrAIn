@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>TerrAIn</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="info_container"><div>INFOOO</div></div>
+        <!-- <div id="root"></div> -->
+        <div id="panel">
+            <div id="maps_container"></div>
+            <div id="maps_btn_container">
+                <div><button id="btn_import_heightmap" class="anchor"></button></div>
+                <div><button id="btn_generate_heightmap" class="anchor"></button></div>
+                <div><button id="btn_choose_dataset" class="anchor"></button></div>
+            </div>
+        </div>
+        <div id="container"></div>
+        
+
+        <!-- <button id="btn_import_heightmap">IMPORT HEIGHTMAP</button> -->
+        <!-- <canvas class="webgl"></canvas> -->
+        <canvas id="canvas" height="256px" width="256px" style="display: none;"></canvas>
+    
+        <div id="container2d">
+            <div id="heightmap2d" class="anchor"><img id="heightmap2d_img" class="anchor" /></div>
+            <div id="texture2d" class="anchor"><img id="texture2d_img" class="anchor" /></div>
+            <div id="setting_container">
+                <button id="btn_colour_heightmap" class="anchor"></button>
+                <button id="btn_edit_heightmap" class="anchor"></button>
+                <button id="btn_export" class="anchor"></button>
+            </div>
+        </div>
+        <!-- <button id="btn_import_heightmap">IMPORT HEIGHTMAP</button> -->
+        <script type="module" src="bundle.js"></script>
+        <div id="edit_heightmap_container">
+            <div id="edit_heightmap_background"></div>
+            <canvas id="edit_heightmap_canvas"></canvas>
+            <button id="btn_exit_edit_heightmap" class="anchor"></button>
+            <input type="range" id="range_edit_heightmap" min="5" max="60" step="5" value="15" class="anchor">
+            <button id="btn_fill_texture" class="anchor"></button>
+        </div>
+        <div id="choose_dataset_container">
+            <div id="choose_dataset_background"></div>
+            <button id="btn_exit_choose_dataset" class="anchor"></button>
+            <div id="datasets_list">
+                <button id="dataset_death_valley">death valley</button>
+                <button id="dataset_laytonville">laytonville</button>
+                <button id="dataset_post_earthquake">post earthquake</button>
+                <button id="dataset_mt_rainier">mt rainier</button>
+                <button id="dataset_san_gabriel">san gabriel</button>
+            </div>
+        </div>
+
+        <!-- <script src="bundle.js"></script> -->
+    </body>
+</html>
