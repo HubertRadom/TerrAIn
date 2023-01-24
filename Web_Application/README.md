@@ -31,19 +31,23 @@ npm run dev
 
 ## How to run backend
 
-1. CD into folder
+1.
+
+Due to the size of the models, we cannot include them in the repository. Train the models and put them into backend/models.
+
+2. CD into folder
 
 ```bash
 cd backend
 ```
 
-2. Install Python packages
+3. Install Python packages
 
 ```bash
 pip install fastapi, tensorflow, pytorch, uvicorn
 ```
 
-3. Start it
+4. Start it
 ```bash
 python -m uvicorn main:app --reload
 ```
