@@ -31,9 +31,7 @@ npm run dev
 
 ## How to run backend
 
-1.
-
-Due to the size of the models, we cannot include them in the repository. Train the models and put them into backend/models.
+1. Due to the size of the models, we cannot include them in the repository. Train the models and put them into backend/models.
 
 2. CD into folder
 
