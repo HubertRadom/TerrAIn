@@ -1,0 +1,32 @@
+{
+  "name": "terrAIn",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack --config ./src/webpack.prod.js",
+    "dev": "webpack serve --config ./src/webpack.dev.js",
+    "backend": "cd ../backend && python -m uvicorn main:app --reload"
+  },
+  "devDependencies": {
+    "@types/dat.gui": "^0.7.7",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.23",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "@types/three": "^0.143.0",
+    "three": "^0.143.0",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "jszip": "^3.10.1",
+    "npyjs": "^0.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
